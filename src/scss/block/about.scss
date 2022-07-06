@@ -1,0 +1,125 @@
+.about {
+  @include adaptiveValue("padding-top", 163, 40);
+  @include adaptiveValue("padding-bottom", 86, 50);
+
+  /* .about__container */
+  &__container {}
+
+  /* .about__body */
+  &__body {
+    display: flex;
+    align-items: center;
+    margin: 0px 0px rem(57) 0px;
+
+    @media (max-width:$mobile) {
+      flex-direction: column;
+    }
+  }
+
+  /* .about__content */
+  &__content {
+    flex: 0 1 65%;
+
+    @media (max-width:$mobile) {
+      margin: 0px 0px rem(30) 0px;
+    }
+  }
+
+  /* .about__title */
+  &__title {
+    margin: 0px 0px rem(53) 0px;
+
+    font-size: 2.6em;
+  }
+
+  /* .about__text */
+  &__text {
+    font-size: 1.2em;
+
+    p {
+      letter-spacing: .1px;
+
+      &:not(:last-child) {
+        margin: 0px 0px rem(28) 0px;
+      }
+    }
+  }
+
+  /* .about__image */
+  &__image {
+    margin: 0 auto;
+  }
+
+  /* .about__social */
+  &__social {}
+}
+
+.social {
+  text-align: center;
+
+  /* .social__title */
+  &__title {
+    font-size: 2.6em;
+    letter-spacing: -1px;
+  }
+
+  /* .social__subtitle */
+  &__subtitle {
+    margin: 0px 0px rem(30) 0px;
+  }
+
+  /* .social__list */
+  &__list {}
+
+  /* .social__item */
+  &__item {
+    display: inline-block;
+    padding: 0px rem(13);
+  }
+
+  /* .social__link */
+  &__link {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: rem(40);
+    height: rem(40);
+
+    font-size: 1.2em;
+    color: #700c86;
+
+    background: rgba(255, 255, 255, 0.972);
+    border-radius: 50%;
+    transition: all .5s ease 0s;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      border-radius: 50%;
+      background: #68187a;
+      transition: all 0.5s ease 0s;
+      transform: scale(0.9);
+      z-index: -1;
+    }
+
+    &:hover {
+      color: #87209e;
+      box-shadow: 0 0 5px #87209e;
+      text-shadow: 0 0 2px #87209e;
+
+      &::before {
+        transform: scale(1.1);
+        box-shadow: 0 0 15px #801f95;
+      }
+    }
+  }
+
+  /* .social__icon */
+  &__icon {}
+}

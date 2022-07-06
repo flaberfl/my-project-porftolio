@@ -1,0 +1,21 @@
+.skills {
+  @include adaptiveValue("padding-top", 80, 10);
+  @include adaptiveValue("padding-bottom", 80, 10);
+  background: $section-background-color-revers;
+
+  /* .skills__container */
+  &__container {}
+
+  &__title {
+    margin: 0px 0px 17px 0px;
+
+    font-size: 2.3em;
+    font-weight: 500;
+  }
+
+  /* .skills__body */
+  &__body {}
+
+  /* .skills__icon */
+  &__icon {}
+}
