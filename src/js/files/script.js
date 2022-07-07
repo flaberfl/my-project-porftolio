@@ -7,13 +7,26 @@ import {
   flsModules
 } from "./modules.js";
 
+// Скрипт дропдаун меню
+
+window.onload = function () {
+  document.addEventListener("click", documentActions);
+
+  function documentActions(e) {
+    const targetElement = e.target;
+    if (window.innerWidth > 768 && isMobile.any()) {
+      if (targetElement.classlist.contains('menu__arrow')) {
+        targetElement.closest('.menu__item').classlist.toggle('_hover');
+      }
+    }
+  }
+}
+
 
 new Typewriter('#typewriter', {
   strings: [
-    "Разработка, верстка сайтов, лендингов",
-    "Написание функционала на JS и PHP",
-    "Стресс-тест проектов на Android и Apple",
-    "Без конструкторов, только ЧИСТЫЙ КОД!",
+    "Разработкой, версткой сайтов, лендингов",
+    "Написанием кода на JS и PHP"
   ],
   autoStart: true,
   loop: true,
@@ -65,5 +78,3 @@ particlesJS("tsparticles", {
   },
   retina_detect: true
 });
-
-

@@ -27,6 +27,7 @@
     }
 
     &__content {
+        // flex: 0 0 513px;
         padding: 80px 0px 0px 0px;
     }
 
@@ -37,17 +38,24 @@
 
     &__subtitle,
     &__name {
+        @include adaptiveValue("font-size", 2.4em, 1.6em);
+
         font-weight: 500;
         line-height: 1.2;
     }
 
     &__name {
-        margin: 23px 0px 40px 0px;
+        margin: 20px 0px 30px 0px;
 
         font-size: 2.5em;
 
         &_color {
             color: #cd5ff8;
+        }
+
+        &_sub {
+            @include adaptiveValue("font-size", 2em, 1em);
+            font-size: 2em;
         }
 
         @media (max-width:$mobile) {
@@ -59,9 +67,10 @@
     &__prof {
         padding: 0px 0px 0px 5px;
 
-        font-size: 2.2em;
+        font-size: 2em;
         font-weight: 600;
-        color: #be6adf;
+        // color: #be6adf;
+        color: #cda0df;
 
         @media (max-width:$mobile) {
             font-size: 1.4em;
