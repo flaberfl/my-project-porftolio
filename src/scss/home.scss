@@ -5,6 +5,7 @@
     background-image: $image-gradient, url(@img/home-bg.jpg);
     background-position: top center;
     background-repeat: no-repeat;
+    background-size: cover;
     z-index: -2;
 
     &__body {
