@@ -7,6 +7,10 @@ import {
   flsModules
 } from "./modules.js";
 
+import {
+  removeClasses
+} from "./functions.js"
+
 // Скрипт дропдаун меню
 
 window.onload = function () {
@@ -14,7 +18,7 @@ window.onload = function () {
 
   function documentActions(e) {
     const targetElement = e.target;
-    if (window.innerWidth > 468 && isMobile.any()) {
+    if (window.innerWidth > 768 && isMobile.any()) {
       if (targetElement.classList.contains('menu__arrow')) {
         targetElement.closest('.menu__item').classList.toggle('_hover');
       }
