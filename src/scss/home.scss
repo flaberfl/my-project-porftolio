@@ -9,17 +9,17 @@
     z-index: -2;
 
     &__body {
-        padding: 0px 74px 82px 27px;
-        @include adaptiveValue("padding-top", 174, 60);
+        padding: 0px 74px 80px 27px;
+        @include adaptiveValue("padding-top", 174, 100);
 
         display: flex;
         justify-content: space-between;
 
-        @media (max-width:$tablet) {
+        @media (max-width: em(1120)) {
             padding-right: 0;
         }
 
-        @media (max-width:$mobile) {
+        @media (max-width:$tablet) {
             flex-direction: column;
             align-items: center;
             padding-bottom: 30px;
@@ -28,39 +28,33 @@
     }
 
     &__content {
-        // flex: 0 0 513px;
-        padding: 80px 0px 0px 0px;
+        @media (min-width:$tablet) {
+            padding: 80px 0px 0px 0px;
+        }
+
     }
 
     &__subtitle {
         padding: 0px 0px 0px 5px;
-        font-size: 2.4em;
+        margin: 0px 0px rem(20) 0px;
+
+        font-size: rem(38);
     }
 
-    &__subtitle,
-    &__name {
-        @include adaptiveValue("font-size", 2.4em, 1.6em);
-
-        font-weight: 500;
-        line-height: 1.2;
-    }
 
     &__name {
-        margin: 20px 0px 30px 0px;
+        font-size: rem(40);
 
-        font-size: 2.5em;
+        &_act {
+            margin: 0px 0px 20px 0px;
 
-        &_color {
-            color: #cd5ff8;
+            font-size: rem(42);
         }
 
-        &_sub {
-            @include adaptiveValue("font-size", 2em, 1em);
-            font-size: 2em;
-        }
-
-        @media (max-width:$mobile) {
-            margin: 18px 0px 30px 0px;
+        &__subtitle,
+        &__name {
+            font-weight: 500;
+            line-height: 1.2;
         }
     }
 
@@ -68,13 +62,12 @@
     &__prof {
         padding: 0px 0px 0px 5px;
 
-        font-size: 2em;
+        font-size: rem(32);
         font-weight: 600;
-        // color: #be6adf;
         color: #cda0df;
 
         @media (max-width:$mobile) {
-            font-size: 1.4em;
+            font-size: rem(36);
             font-weight: 500;
         }
     }
@@ -84,9 +77,10 @@
             width: 450px;
             max-width: 100%;
 
-            animation: floating 4s linear;
+            @media (min-width:$tablet) {
+                animation: floating 4s linear;
+            }
         }
-
     }
 }
 

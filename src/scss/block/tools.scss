@@ -2,6 +2,8 @@
   @include adaptiveValue("padding-top", 40, 10);
   @include adaptiveValue("padding-bottom", 50, 10);
   background: $section-background-color;
+  // position: relative;
+  // z-index: -2;
 
   /* .tools__container */
   &__container {}

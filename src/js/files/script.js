@@ -32,12 +32,13 @@ window.onload = function () {
 
 new Typewriter('#typewriter', {
   strings: [
-    "Разработкой, версткой сайтов, лендингов",
-    "Написанием кода на JS и PHP"
+    "Разрабатываю сайты, лендинги",
+    "Пишу код на JS и PHP",
+    "Качество и в срок!"
   ],
   autoStart: true,
   loop: true,
-  deleteSpeed: 80
+  deleteSpeed: 0
 });
 
 // Подключение настроек tsparticles.js 

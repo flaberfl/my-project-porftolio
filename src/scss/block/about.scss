@@ -1,9 +1,8 @@
 .about {
   @include adaptiveValue("padding-top", 163, 40);
   @include adaptiveValue("padding-bottom", 86, 50);
-
-  /* .about__container */
-  &__container {}
+  // position: relative;
+  // z-index: -2;
 
   /* .about__body */
   &__body {
@@ -18,7 +17,7 @@
 
   /* .about__content */
   &__content {
-    flex: 0 1 65%;
+    flex: 0 1 70%;
 
     @media (max-width:$mobile) {
       margin: 0px 0px rem(30) 0px;
@@ -29,15 +28,17 @@
   &__title {
     margin: 0px 0px rem(53) 0px;
 
-    font-size: 2.6em;
+    font-size: rem(42);
+    text-transform: uppercase;
   }
 
   /* .about__text */
   &__text {
-    font-size: 1.2em;
+    font-size: rem(20);
 
     p {
       letter-spacing: .1px;
+
 
       &:not(:last-child) {
         margin: 0px 0px rem(28) 0px;
@@ -49,9 +50,6 @@
   &__image {
     margin: 0 auto;
   }
-
-  /* .about__social */
-  &__social {}
 }
 
 .social {
@@ -59,17 +57,16 @@
 
   /* .social__title */
   &__title {
-    font-size: 2.6em;
+
+    font-size: rem(42);
     letter-spacing: -1px;
+    text-transform: uppercase;
   }
 
   /* .social__subtitle */
   &__subtitle {
     margin: 0px 0px rem(30) 0px;
   }
-
-  /* .social__list */
-  &__list {}
 
   /* .social__item */
   &__item {
@@ -119,7 +116,4 @@
       }
     }
   }
-
-  /* .social__icon */
-  &__icon {}
 }
