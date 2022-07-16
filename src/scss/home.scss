@@ -25,6 +25,11 @@
             padding-bottom: 30px;
             padding-left: 0;
         }
+
+        @media (min-width:em(1200)) {
+            max-width: 1140px;
+            margin: 0 auto;
+        }
     }
 
     &__content {
