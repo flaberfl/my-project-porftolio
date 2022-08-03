@@ -10,13 +10,6 @@
 
   background: $section-background-color-revers;
 
-
-  /* .portfolio__container */
-  &__container {}
-
-  /* .portfolio__title */
-  &__title {}
-
   &__subtitle {
     margin: 0px 0px rem(60) 0px;
 
@@ -33,9 +26,6 @@
       grid-template-columns: repeat(2, 1fr);
     }
   }
-
-  /* .portfolio__project */
-  &__project {}
 
   &__pagination {
     display: flex;
@@ -71,10 +61,9 @@
   &__image {
     margin: 0px 0px 25px 0px;
     width: 100%;
+
     opacity: 0.8;
-    // border-radius: 10px;
     border-color: 1px solid white;
-    // width: 235px;
   }
 
   /* .project__content */
