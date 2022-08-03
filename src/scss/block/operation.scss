@@ -1,5 +1,5 @@
 .operation {
-  @include adaptiveValue("padding-top", 120, 40);
+  @include adaptiveValue("padding-top", 100, 40);
   @include adaptiveValue("padding-bottom", 86, 50);
   background: $section-background-color;
 
@@ -27,13 +27,16 @@
   /* .operation__title */
   &__title,
   &__features-title {
-    margin: 0px 0px rem(25) 0px;
+    margin: 0px 0px rem(35) 0px;
+
+    @media (max-width:$mobileSmall) {
+      margin: 0px 0px rem(20) 0px;
+    }
   }
 
   /* .operation__list */
-  &__list,
-  &__features-list {
-    margin: 0px 0px rem(40) 0px;
+  &__list {
+    margin: 0px 0px rem(60) 0px;
   }
 
   /* .operation__item */
@@ -51,6 +54,11 @@
     &::before {
       position: absolute;
       left: 0;
+
+      @media (max-width: em(480)) {
+        font-size: rem(18);
+        top: 5px;
+      }
     }
 
   }
