@@ -3,6 +3,9 @@
   @include adaptiveValue("padding-bottom", 86, 50);
   background: $section-background-color;
 
+  position: relative;
+  z-index: -2;
+
   /* .operation__container */
   &__container {
     display: flex;

@@ -4,12 +4,12 @@
   background: $section-background-color-revers;
 
   /* .skills__container */
-  &__container {}
+  &__container {
+    text-align: center;
+  }
 
-  &__title {
+  &__subtitle {
     margin: 0px 0px rem(30) 0px;
-
-    font-weight: 500;
   }
 
   /* .skills__body */
