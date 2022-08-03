@@ -33,9 +33,14 @@
     }
 
     &__content {
+        position: relative;
         @media (min-width:$tablet) {
             padding: 80px 0px 0px 0px;
         }
+        // @media (max-width:$mobile){
+        //      margin: 0px 0px 40px 0px;
+        //      position: absolute;
+        // }
 
     }
 
@@ -78,6 +83,13 @@
     }
 
     &__image {
+        position: relative;
+        @media (max-width:$mobile){
+             position: absolute;
+             top: 50px;
+
+             opacity: .2;
+        }
         img {
             width: 450px;
             max-width: 100%;
