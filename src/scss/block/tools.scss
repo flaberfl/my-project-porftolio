@@ -1,21 +1,10 @@
 .tools {
   @include adaptiveValue("padding-top", 60, 10);
-  @include adaptiveValue("padding-bottom", 50, 40);
-  background: $section-background-color;
-  // position: relative;
-  // z-index: -2;
-
-  /* .tools__container */
-  &__container {}
+  @include adaptiveValue("padding-bottom", 150, 80);
+  background: $section-background-color-revers;
 
   /* .tools__title */
   &__title {
     margin: 0px 0px rem(30) 0px;
   }
-
-  /* .tools__body */
-  &__body {}
-
-  /* .tools__icon */
-  &__icon {}
 }

@@ -3,7 +3,7 @@
 .footer {
   font-size: 1em;
   font-weight: 500;
-  padding: 8px 0px;
+  padding: rem(10) 0px;
 
   background-color: rgb(10, 4, 22);
 
@@ -13,8 +13,8 @@
     justify-content: space-between;
     align-items: center;
 
-    @media (max-width:$mobileSmall){
-       flex-direction: column; 
+    @media (max-width:$mobileSmall) {
+      flex-direction: column;
     }
   }
 
@@ -28,19 +28,11 @@
       display: none;
     }
   }
-
-  /* .footer__social */
-  &__social {}
 }
-
-.copyright {}
 
 .social-footer {
   display: flex;
-  gap: 30px;
-
-  /* .social-footer__item */
-  &__item {}
+  gap: rem(30);
 
   /* .social-footer__link */
   &__link {
@@ -54,12 +46,5 @@
     }
   }
 }
-
-.social {
-
-  /* .social__icon */
-  &__icon {}
-}
-
 
 //====================================================================================================

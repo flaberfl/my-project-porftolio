@@ -3,12 +3,16 @@
 
 .button {
 	display: inline-flex;
-	padding: 0px 0px;
-	@media (any-hover: hover) {
-		&:hover {
-		}
-	}
-	&._fw {
-		width: 100%;
-	}
+	align-items: center;
+	padding: rem(6) rem(12);
+
+	line-height: 1.5;
+	color: #fff;
+
+	border-radius: 4px;
+	background-color: transparent;
+	border: 1px solid transparent;
+	background-color: $bg-btn;
+	border-color: $bg-btn;
+	transition: all 0.3s ease 0s;
 }
