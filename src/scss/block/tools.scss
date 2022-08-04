@@ -1,6 +1,6 @@
 .tools {
-  @include adaptiveValue("padding-top", 40, 10);
-  @include adaptiveValue("padding-bottom", 50, 10);
+  @include adaptiveValue("padding-top", 60, 10);
+  @include adaptiveValue("padding-bottom", 50, 40);
   background: $section-background-color;
   // position: relative;
   // z-index: -2;

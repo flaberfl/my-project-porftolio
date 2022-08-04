@@ -1,5 +1,5 @@
 .about {
-  @include adaptiveValue("padding-top", 100, 40);
+  @include adaptiveValue("padding-top", 100, 50);
   @include adaptiveValue("padding-bottom", 60, 50);
   // position: relative;
   // z-index: -2;
@@ -26,7 +26,9 @@
 
   /* .about__title */
   &__title {
-    margin: 0px 0px rem(53) 0px;
+    // margin: 0px 0px rem(53) 0px;
+
+    @include adaptiveValue("margin-bottom", 45, 20);
 
     text-transform: uppercase;
   }
@@ -35,8 +37,8 @@
   &__text {
     font-size: rem(20);
 
-    @media (max-width:$mobile){
-       font-size: rem(18); 
+    @media (max-width:$mobile) {
+      font-size: rem(18);
     }
 
     p {

@@ -5,13 +5,13 @@
 }
 
 .portfolio {
-  @include adaptiveValue("padding-top", 80, 20);
-  @include adaptiveValue("padding-bottom", 80, 20);
+  @include adaptiveValue("padding-top", 80, 40);
+  @include adaptiveValue("padding-bottom", 80, 40);
 
   background: $section-background-color-revers;
 
   &__subtitle {
-    margin: 0px 0px rem(60) 0px;
+    margin: 0px 0px rem(50) 0px;
 
     text-align: center;
   }

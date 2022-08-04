@@ -1,6 +1,6 @@
 .skills {
-  @include adaptiveValue("padding-top", 80, 10);
-  @include adaptiveValue("padding-bottom", 80, 10);
+  @include adaptiveValue("padding-top", 80, 40);
+  @include adaptiveValue("padding-bottom", 80, 40);
   background: $section-background-color-revers;
 
   /* .skills__container */

@@ -1,6 +1,6 @@
 .operation {
   @include adaptiveValue("padding-top", 100, 40);
-  @include adaptiveValue("padding-bottom", 86, 50);
+  @include adaptiveValue("padding-bottom", 70, 20);
   background: $section-background-color;
 
   position: relative;
