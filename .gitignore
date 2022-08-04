@@ -15,3 +15,5 @@ venv/
 dist/
 .DS_Store
 src/img/.DS_Store
+src/.DS_Store
+src/img/.DS_Store
